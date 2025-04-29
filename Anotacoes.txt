@@ -1,25 +1,47 @@
 //REPL
-O REPL (Read-Eval-Print Loop) é um ambiente interativo do Node.js que permite executar código JavaScript diretamente no terminal. Ele funciona como um console onde você pode digitar comandos, testá-los rapidamente e ver o resultado imediatamente.
+	O REPL (Read-Eval-Print Loop) é um ambiente interativo do Node.js que permite executar código JavaScript diretamente no terminal. Ele funciona como um console onde você pode digitar comandos, testá-los rapidamente e ver o resultado imediatamente.
 
-Como funciona o REPL?
-O nome REPL vem das quatro etapas do processo:
+	Como funciona o REPL?
+	O nome REPL vem das quatro etapas do processo:
 
     - Read (Ler) → Lê a entrada do usuário.
     - Eval (Avaliar) → Avalia (executa) o código digitado.
     - Print (Imprimir) → Exibe o resultado da execução.
     - Loop (Repetir) → Volta para o passo 1, permitindo novas entradas.
 
-Para que serve?
-Testar pequenos trechos de código sem precisar criar arquivos.
-Explorar funções e APIs do Node.js de forma rápida.
-Depurar (debugar) código ao testar comandos antes de incluí-los no projeto.
+	Para que serve?
+	Testar pequenos trechos de código sem precisar criar arquivos.
+	Explorar funções e APIs do Node.js de forma rápida.
+	Depurar (debugar) código ao testar comandos antes de incluí-los no projeto.
 
-Para usar o REPL, basta abrir o terminal e digitar (node) caso você já tenha o node instalado.
-Para sair do REPL, basta digitar o comando .exit
+	Para usar o REPL, basta abrir o terminal e digitar (node) caso você já tenha o node instalado.
+	Para sair do REPL, basta digitar o comando .exit
 
 //FILE SYSTEM
-É um módulo que serve para trabalhar com arquivos, diretórios, etc. Ele é um "Core Module", ou seja, não precisa ser instalado porque o próprio Node disponibiliza ele pra gente.
+	É um módulo que serve para trabalhar com arquivos, diretórios, etc. Ele é um "Core Module", ou seja, não precisa ser instalado porque o próprio Node disponibiliza ele pra gente.
 
 //REQUIRE
-É forma de importar padrão do Node Js, ela é uma forma de importar um pouco mais antigo do que o <import>;
-Por padrão a gente importa o módulo e armazena ele em uma variável constante, já que não iremos mudar o valor dele. Outro detalhe importante é nomear a variável igual ao módulo (ex.: const fs = require('fs')) para que a gente esteja ciente de qual módulo estamos lidando quando usamos a variável.
+	É forma de importar padrão do Node Js, ela é uma forma de importar um pouco mais antigo do que o <import>;
+	Por padrão a gente importa o módulo e armazena ele em uma variável constante, já que não iremos mudar o valor dele. Outro detalhe importante é nomear a variável igual ao módulo (ex.: const fs = require('fs')) para que a gente esteja ciente de qual módulo estamos lidando quando usamos a variável.
+
+//MÓDULOS
+	são scripts reaproveitáveis que criamos para utilizar bastante no nosso projeto, então a gente constrói ele e depois utiliza em diferentes lugares do nosso projeto para desempenhar uma função específica.
+
+	MÓDULOS INTERNOS: são módulos que nós desenvolvemos e exportamos para usar em outras partes do projeto, importando sempre ele onde queremos usar;
+	CORE MODULES: são módulos que o próprio Node.js disponibiliza para gente, eles já vem prontos para uso, basta importar e usar, por exemplo, o File System é um dos Core Modules;
+	MÓDULOS EXTERNOS: são módulos que instalamos via npm/yarn/npx, esses módulos são aqueles que outros desenvolvedores fazem e disponibilizam para fazer download com algum dos gerenciadores de pacotes do Node.js(npm, yarn, npx).
+
+//MÓDULOS INTERNOS
+	- precisam ser criados nas pastas do nosso projeto;
+	- precisamos exportar eles no final, ou seja, depois de cria-los;
+	- podemos usar a forma de exportação padrão do Node.js para exportar, sendo ela <modulo.exports;>;
+	- e precisamos importar sempre ele no arquivo que pretendemos usá-lo;
+	- para importar, podemos usar a instrução 'require' ou outra forma que seja padrão do Node.js.
+
+//IMPORT & EXPORT
+	- é possível também criar, exportar e importar um módulo interno usando as funcionalidades do Node.js (import/export);
+	- são funcionalidades mais modernas e que demandam menos scripts para funcionar, ou seja, são mais sucintas;
+	- possuem mais recursos do que a forma padrão de <module.exports>;
+	- porém a extensão dos arquivos precisam ser <.mjs>;
+	- para exportar usamos o <export default nome_da_função>;
+	- e para importar usamos < import nome_da_função from "caminho_do_modulo">;
