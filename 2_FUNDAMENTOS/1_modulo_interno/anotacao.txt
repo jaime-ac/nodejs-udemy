@@ -1,0 +1,6 @@
+//MÓDULOS INTERNOS
+	- precisam ser criados nas pastas do nosso projeto;
+	- precisamos exportar eles no final, ou seja, depois de cria-los;
+	- podemos usar a forma de exportação padrão do Node.js para exportar, sendo ela <modulo.exports;>;
+	- e precisamos importar sempre ele no arquivo que pretendemos usá-lo;
+	- para importar, podemos usar a instrução 'require' ou outra forma que seja padrão do Node.js.

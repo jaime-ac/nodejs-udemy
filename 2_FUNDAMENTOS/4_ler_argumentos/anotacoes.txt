@@ -1,0 +1,9 @@
+//LER ARGUMENTOS
+    - significa capturar valores que você passa ao rodar seu script via linha de comando;
+    - ajuda a criar script personalizados ou automatizados;
+    - os argumentos ficam em um array chamado "process.argv" que não precisa criar, pois já vem em qualquer projeto node;
+    - geralmente se ignora os dois primeiros valores do array porque só contém o caminho do node e o caminho do script
+
+    - para pegar somente os argumentos sem os caminhos, a gente usa a variável "args" para armazenar apenas o nosso argumento, começando pelo índice 2 do array (se o argumento começar aí);
+    - quando eu dou um '.split("=")[1]' estou dividindo o meu string em duas partes formando um array, onde o ponto de divisão é o igual, daí o '[1]' me retorna o que está na posição 1 do meu array, lembrando que o array começa no posição zero, e o está na posição 1 vai ser exatamente o nome que está depois do sinal de igualdade;
+    ex.: "nome=Jaime" => quando dividido o array fica assim ['nome', 'Jaime'] então ao passar o argumento de .split("=")[1] estou dizendo a ele para pegar o que está na posição 1 do meu array, que é o nome em si.

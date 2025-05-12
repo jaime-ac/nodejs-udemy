@@ -30,18 +30,3 @@
 	MÓDULOS INTERNOS: são módulos que nós desenvolvemos e exportamos para usar em outras partes do projeto, importando sempre ele onde queremos usar;
 	CORE MODULES: são módulos que o próprio Node.js disponibiliza para gente, eles já vem prontos para uso, basta importar e usar, por exemplo, o File System é um dos Core Modules;
 	MÓDULOS EXTERNOS: são módulos que instalamos via npm/yarn/npx, esses módulos são aqueles que outros desenvolvedores fazem e disponibilizam para fazer download com algum dos gerenciadores de pacotes do Node.js(npm, yarn, npx).
-
-//MÓDULOS INTERNOS
-	- precisam ser criados nas pastas do nosso projeto;
-	- precisamos exportar eles no final, ou seja, depois de cria-los;
-	- podemos usar a forma de exportação padrão do Node.js para exportar, sendo ela <modulo.exports;>;
-	- e precisamos importar sempre ele no arquivo que pretendemos usá-lo;
-	- para importar, podemos usar a instrução 'require' ou outra forma que seja padrão do Node.js.
-
-//IMPORT & EXPORT
-	- é possível também criar, exportar e importar um módulo interno usando as funcionalidades do Node.js (import/export);
-	- são funcionalidades mais modernas e que demandam menos scripts para funcionar, ou seja, são mais sucintas;
-	- possuem mais recursos do que a forma padrão de <module.exports>;
-	- porém a extensão dos arquivos precisam ser <.mjs>;
-	- para exportar usamos o <export default nome_da_função>;
-	- e para importar usamos < import nome_da_função from "caminho_do_modulo">;

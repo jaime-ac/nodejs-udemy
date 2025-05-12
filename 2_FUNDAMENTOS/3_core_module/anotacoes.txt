@@ -1,0 +1,4 @@
+//CORE MODULES
+	- são os tipos de módulos que já vem prontos para serem utilizados;
+	- eles permitem trabalhar com arquivos e diretórios, servir aplicações, etc;
+	- eles precisam ser importados no projeto para serem utilizados

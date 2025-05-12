@@ -1,0 +1,7 @@
+//IMPORT & EXPORT
+	- é possível também criar, exportar e importar um módulo interno usando as funcionalidades do Node.js (import/export);
+	- são funcionalidades mais modernas e que demandam menos scripts para funcionar, ou seja, são mais sucintas;
+	- possuem mais recursos do que a forma padrão de <module.exports>;
+	- porém a extensão dos arquivos precisam ser <.mjs>;
+	- para exportar usamos o <export default nome_da_função>;
+	- e para importar usamos < import nome_da_função from "caminho_do_modulo">;
