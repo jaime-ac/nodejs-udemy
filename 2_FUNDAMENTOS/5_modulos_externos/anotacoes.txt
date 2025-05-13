@@ -1,0 +1,4 @@
+//MÓDULOS EXTERNOS
+    - os módulos externos são os módulos que instalados por meio de gerenciadores de pacote como o npm, yarn, etc;
+    - geralmente usamos o comando 'npm install <nome do múdulo>' para fazer isso;
+    - depois precisamos importar o pacote instalado no arquivo em que desejamos usá-lo;
